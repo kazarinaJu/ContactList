@@ -11,17 +11,18 @@ final class PersonsListViewController: UITableViewController {
     
     private var contactList = Person.getPersons()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
 //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let person = contactList[indexPath.row]
         let personVC = segue.destination as? PersonInfoViewController
         personVC?.person = person
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: "Back",
+            style: .plain,
+            target: nil,
+            action: nil
+        )
     }
 }
     
@@ -32,7 +33,7 @@ extension PersonsListViewController {
         }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
             var content = cell.defaultContentConfiguration()
             let person = contactList[indexPath.row]
             content.text = person.fullName
