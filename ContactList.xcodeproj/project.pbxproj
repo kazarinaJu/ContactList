@@ -44,8 +44,8 @@
 		0521CEF229EECE0D001408CF /* App */ = {
 			isa = PBXGroup;
 			children = (
-				05FD501429EEBEA00054600A /* LaunchScreen.storyboard */,
-				05FD500F29EEBE9F0054600A /* Main.storyboard */,
+				05FD500B29EEBE9F0054600A /* SceneDelegate.swift */,
+				05FD500929EEBE9F0054600A /* AppDelegate.swift */,
 				05FD501729EEBEA00054600A /* Info.plist */,
 			);
 			path = App;
@@ -78,8 +78,8 @@
 		0521CEF729EED1E2001408CF /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				05FD500929EEBE9F0054600A /* AppDelegate.swift */,
-				05FD500B29EEBE9F0054600A /* SceneDelegate.swift */,
+				05FD501429EEBEA00054600A /* LaunchScreen.storyboard */,
+				05FD500F29EEBE9F0054600A /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
