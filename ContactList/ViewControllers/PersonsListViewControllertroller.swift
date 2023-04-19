@@ -25,14 +25,12 @@ final class PersonsListViewController: UITableViewController {
     }
 }
     
-
-    
 //MARK: - UITableViewDataSource
 extension PersonsListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             contactList.count
         }
-        
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
             var content = cell.defaultContentConfiguration()
@@ -41,9 +39,4 @@ extension PersonsListViewController {
             cell.contentConfiguration = content
             return cell
         }
-}
-
-// MARK: - UITableViewDelegate
-extension PersonsListViewController {
-    
 }

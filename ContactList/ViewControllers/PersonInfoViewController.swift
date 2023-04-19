@@ -8,7 +8,7 @@
 import UIKit
 
 final class PersonInfoViewController: UIViewController {
-
+    
     @IBOutlet var personPhoneLabel: UILabel!
     @IBOutlet var personEmailLabel: UILabel!
     
@@ -16,13 +16,10 @@ final class PersonInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.title = person.fullName
         
         personPhoneLabel.text = "Phone: \(person.phone)"
         personEmailLabel.text = "Email: \(person.email)"
-
     }
-    
-
-
 }
